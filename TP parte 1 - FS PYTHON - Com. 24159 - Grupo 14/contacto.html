@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link href="estilos/estilo-contacto.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="imagenes/logo2favi16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="/scripts/contacto.js"></script>
+    <script src="https://kit.fontawesome.com/79322a994f.js" crossorigin="anonymous"></script>
+    <title>Paw Finder | Contactanos</title>
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <header class="encabezado">
+            <div class="encabezado_izq">
+                <figure class="fig_izq">
+                    <a href="index.html"><img class="logoimg" src="imagenes/logo2.1.png"
+                            alt="Logo - Imagen de un perro y un gato"></a>
+                </figure>
+            </div>
+
+            <div class="encabezado_centro">
+                <h1 class="animate__animated animate__fadeInRight">Contactanos</h1>
+            </div>
+
+            <div class="encabezado_der">
+                <figure class="fig_der">
+                    <img class="img_der_h" src="imagenes/perro-gato-corriendo-hierba_full.jpg"
+                        alt="Foto de cachorros de perro y gato">
+                </figure>
+            </div>
+        </header>
+
+        <nav class="menu-bar">
+            <div class="menu-bot">
+                <a class="boton1" href="index.html"><span class="texto-boton">Novedades</span></a>
+                <a class="boton2" href="servicios.html"><span class="texto-boton">Servicios para mascotas</span></a>
+                <a class="boton3" href="nosotros.html"><span class="texto-boton">Sobre nosotros</span></a>
+                <a class="boton4" href="contacto.html"><span class="texto-boton">Contactanos</span></a>
+            </div>
+        </nav>
+
+        <main class="main">
+            <section class="seccion">
+                <h2 class="animate__animated animate__fadeInDown">Formulario de contacto</h2>
+                <div class="formulario">
+                    <form name="f_contacto" action="contacto_g.html" onsubmit="return validacion();">
+
+                        <div class="f_motivo">
+                            <label for="motivo">Motivo:</label>
+                            <select name="motivo" id="motivo">
+                                <option value="0">Seleccione una opción</option>
+                                <option value="1">Publicar un aviso</option>
+                                <option value="2">Opinar sobre un servicio</option>
+                                <option value="3">Hacer una consulta</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="f_datos">
+
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="nombre">Nombre:</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="nombre" id="nombre" size="15">
+                                    </td>
+
+                                    <td>
+                                        <label for="apellido">&nbsp;&nbsp;Apellido:</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="apellido" id="apellido" size="15">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label for="email">E-mail:</label>
+                                    </td>
+                                    <td>
+                                        <input type="email" name="email" id="email" size="15">
+                                    </td>
+
+                                    <td>
+                                        <label for="tel">&nbsp;&nbsp;WhatsApp:</label>
+                                    </td>
+                                    <td>
+                                        <input type="number" name="tel" id="tel" placeholder="Opcional">
+                                    </td>
+                                </tr>
+
+                            </table>
+
+                        </div>
+
+                        <label class="m_error_valid" id="error_validacion"></label>
+
+                        <div class="f_mensaje">
+                            <label for="mensaje">Mensaje:</label>
+                            <br>
+                            <textarea name="mensaje" id="mensaje" cols="37" rows="6"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <p>Si lo desea, puede adjuntar una imagen para incluir en su anuncio:</p>
+                            <input type="file" name="subirimagen" id="subirimagen">
+                        </div>
+                        <br>
+                        <div class="f_acepto">
+                            <input type="checkbox" name="terminos" id="terminos" value="1">
+                            <label for="terminos">Acepto los términos y condiciones.</label>
+                        </div>
+                        <br>
+                        <div class="f_botones">
+                            <input class="f_enviar" type="submit" value="Enviar">
+                            <input class="f_borrar" type="reset" value="Borrar campos">
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="pie">
+            <div class="copyright">
+                <h3> Paw Finder &copy; 2024</h3>
+            </div>
+            <br>
+            <div class="iconos-redes">
+                <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
