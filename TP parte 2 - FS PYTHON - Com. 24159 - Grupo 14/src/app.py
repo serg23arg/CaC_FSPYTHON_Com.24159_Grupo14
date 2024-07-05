@@ -9,7 +9,7 @@ app = Flask(__name__, template_folder = template_dir)
 @app.route('/')
 def home():
     cursor = db.database.cursor()
-    cursor.execute("SELECT * FROM form_contacto ORDER BY Fecha DESC")
+    cursor.execute("SELECT * FROM form_contacto ORDER BY Observaciones, Fecha DESC")
     miResultado = cursor.fetchall()
 
     insertarObjectos = [] 
