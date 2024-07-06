@@ -12,7 +12,7 @@ create table form_contacto(
     Mensaje VARCHAR(500),
     Adjunto ENUM('SI', 'NO'),
     TC ENUM('SI', 'NO'),
-    Observaciones VARCHAR(100) DEFAULT " "
+    Observaciones VARCHAR(100) DEFAULT ""
 );
 
 select * from form_contacto;
